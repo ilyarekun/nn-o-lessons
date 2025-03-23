@@ -1,1 +1,5 @@
 venv/
+irjob.slurm
+error.log
+output.log
+rossman/
