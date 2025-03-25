@@ -396,7 +396,7 @@ use_cuda = torch.cuda.is_available()
 device = torch.device("cuda:0" if use_cuda else "cpu")
 max_epochs = 60
 learning_rate = 0.01
-model = ModelRegv4_lr(31, 1)  
+model = ModelRegv4_t(31, 1)  
 model = model.to(device)
 criterion = nn.MSELoss()
 optimizer = optim.Adam(model.parameters(), lr=learning_rate)
@@ -557,7 +557,7 @@ print(f"Test Loss: {test_loss:.4f}")
 print(f"Test R²: {test_r2:.4f}")
 print(f"Test Explained Variance: {test_exp_var:.4f}")
 
-results_path = os.path.join(os.path.dirname('best_model.pt'), 'test_results.txt')
+results_path = os.path.join(os.path.dirname('best_model.pt'), 'test_results1.txt')
 with open(results_path, 'w') as f:
     f.write(f"Test Loss: {test_loss:.4f}\n")
     f.write(f"Test R²: {test_r2:.4f}\n")
