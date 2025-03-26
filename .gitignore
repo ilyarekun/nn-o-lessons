@@ -6,3 +6,5 @@ rossman/
 nn-o-task-hypr-testing/rossmann-store-sales.zip
 nn-o-task-hypr-testing/Testovanie_Rekun
 nn-o-task-hypr-testing/rossmann-store-sales
+MNIST/
+scripted_model.pt
